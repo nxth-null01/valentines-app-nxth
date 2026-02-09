@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Valentine's Invitation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/favicon/icon.webp" type="image/x-icon">
+  <script type="module" defer src="./js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- Envelope -->
+  <div class="card" id="envelopeScreen">
+    <div class="envelope" id="envelope">
+      <div class="flap"></div>
+    </div>
+    <p>Click the envelope 💌</p>
+  </div>
+
+  <!-- Valentine Question -->
+  <div class="card hidden" id="questionScreen">
+    <h1>Will you be my Valentine? 💖</h1>
+    <div class="buttons">
+      <button id="yesBtn">Yes 💕</button>
+      <button id="noBtn">No 🙈</button>
+    </div>
+  </div>
+
+  <!-- MAIN MENU -->
+  <div class="card hidden" id="optionsScreen">
+    <!-- Dynamic content injected by JS -->
+  </div>
+
+  <!-- SUB SCREENS -->
+  <div class="card hidden" id="subScreen">
+    <h1 id="subTitle"></h1>
+    <div class="options" id="subOptions"></div>
+  </div>
+
+</body>
+
+</html>
