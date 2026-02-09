@@ -111,9 +111,30 @@ button {
   border-radius: 14px;
   font-size: 13px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.2s ease;
 }
 
 .option:hover {
   transform: scale(1.05);
+}
+.option.done {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+.option button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: none;
+  background: #ff5c8a;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
 }
